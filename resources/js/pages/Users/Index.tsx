@@ -11,11 +11,18 @@ const breadcrumbs: BreadcrumbItem[] = [
     },
 ];
 
-export default function Dashboard() {
+export default function Index({users}) {
     return (
         <AppLayout breadcrumbs={breadcrumbs}>
             <Head title="Users" />
-           <h1>Hi Greg</h1>
+
+          {users.map(user=>(
+            <div key={user.id}>
+                <h2>Hi {user.name}</h2> 
+                <h2>{user.email}</h2> 
+                 <h2>{user.password}</h2>   </div>
+          ))}
+                
         </AppLayout>
     );
 }
