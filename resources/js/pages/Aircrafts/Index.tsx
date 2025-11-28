@@ -5,8 +5,8 @@ import { Head } from '@inertiajs/react';
 
 const breadcrumbs: BreadcrumbItem[] = [
     {
-        title: 'Products',
-        href: "/products",
+        title: 'Aircraft',
+        href: "/aircrafts",
     },
 ];
 
@@ -14,8 +14,7 @@ export default function Index() {
     return (
         <AppLayout breadcrumbs={breadcrumbs}>
             <Head title="Products" />
-           <h1 className='hover:scale-110'>Products</h1>
-           <button className='hover:scale-110'>Buy Now</button>
+           <h1 className=''>Aircraft</h1>
         </AppLayout>
     );
 }
